@@ -16,14 +16,16 @@ public class Main {
         int a = scanner.nextInt();
         System.out.print("Введите B - ");
         int b = scanner.nextInt();
-        if (a > b){
+
+        while (a > b){
             System.out.println("B не может быть меньше A");
             System.out.print("Введите B - ");
             b = scanner.nextInt();
         }
+
         int n = 0;
 
-        for (int i = b - 1; i > a ; i--) {
+        for (int i = b - 1; i > a; i--) {
             System.out.print(i + ", ");
             n++;
         }

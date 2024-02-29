@@ -14,11 +14,13 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите процент по вкладу - ");
         double p = scanner.nextDouble();
-        if (p <= 0 || p > 25) {
+
+        while (p <= 0 || p > 25) {
             System.out.println("Ввели не верный процент - допустимо (0<P< 25) ");
             System.out.print("Введите процент по вкладу - ");
             p = scanner.nextDouble();
         }
+
         double s = 1000;
         int k = 0;
 

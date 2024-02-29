@@ -17,11 +17,13 @@ public class Main {
         int b = scanner.nextInt();
         System.out.print("Введите длину отрезка  C - ");
         int c = scanner.nextInt();
-        if (a < c || b < c) {
+
+        while (a < c || b < c) {
             System.out.println("C не может быть больше A или B");
             System.out.print("Введите длину отрезка C - ");
             c = scanner.nextInt();
         }
+
         int counterC = 0;
 
         for (int i = a; i >= c; i -= c) {

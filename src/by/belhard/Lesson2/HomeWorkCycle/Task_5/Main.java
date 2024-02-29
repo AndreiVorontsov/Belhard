@@ -15,7 +15,8 @@ public class Main {
         int a = scanner.nextInt();
         System.out.print("Введите длину отрезка  B - ");
         int b = scanner.nextInt();
-        if (a < b) {
+
+        while (a < b) {
             System.out.println("B не может быть больше A");
             System.out.print("Введите длину отрезка B - ");
             b = scanner.nextInt();

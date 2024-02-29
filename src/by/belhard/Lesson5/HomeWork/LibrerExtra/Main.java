@@ -3,6 +3,7 @@ package by.belhard.Lesson5.HomeWork.LibrerExtra;
 import by.belhard.Lesson5.HomeWork.Librery.Book;
 import by.belhard.Lesson5.HomeWork.Librery.Reader;
 
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class Main {
@@ -26,7 +27,7 @@ public class Main {
                     boolean isFull = true; // true если в массиве нет места
                     for (int i = 0; i < readers.length; i++) {
                         if (readers[i] == null) {
-                            readers[i] = readers[i].addReader();
+                            readers[i] = addReader();
                             isFull = false;
                             break;
                         }
@@ -37,8 +38,8 @@ public class Main {
                     break;
                 }
                 case 2: {
-                    Book book = new Book();
-                    book.initBook();
+                    Book book = initBook();;
+
                     System.out.println("Введите номер читательского билета: ");
                     int numberCard = scanner.nextInt();
                     scanner.nextLine();
@@ -109,5 +110,44 @@ public class Main {
                 }
             }
         } while (action != 6);
+    }
+    public static Book initBook() {
+        String name;
+        String authorName;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите название книги: ");
+        name = scanner.nextLine();
+        System.out.println("Введите автора:");
+        authorName = scanner.nextLine();
+        return new Book(name,authorName);
+    }
+    public static Reader addReader() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите данные читателя");
+        System.out.println("Введите фамилию: ");
+        String surName = scanner.nextLine();
+        System.out.println("Введите имя: ");
+        String name = scanner.nextLine();
+        System.out.println("Введите отчество: ");
+        String patronymic = scanner.nextLine();
+        System.out.println("Введите номер читательского билета: ");
+        int numberCard = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println("Введите факультет: ");
+        String faculty = scanner.nextLine();
+        int year;
+        int mon;
+        int day;
+        System.out.println("Введите дату рождения:");
+        System.out.print("Год ");
+        year = scanner.nextInt();
+        System.out.print("Месяц ");
+        mon = scanner.nextInt();
+        System.out.print("День ");
+        day = scanner.nextInt();
+        LocalDate birthday = LocalDate.of(year, mon, day);
+        System.out.println("Введите номер телефрна");
+        int numberPhone = scanner.nextInt();
+        return new Reader(name, patronymic, surName, numberCard, faculty, birthday, numberPhone);
     }
 }

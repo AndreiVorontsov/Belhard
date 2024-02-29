@@ -1,7 +1,6 @@
 package by.belhard.Lesson5.HomeWork.Librery;
 
 import java.time.LocalDate;
-import java.util.Scanner;
 
 /*
 Определить класс Reader, хранящий такую информацию о пользователе библиотеки:
@@ -67,11 +66,11 @@ public class Reader {
             }
         }
 
-        if (counter == 2 || counter == 3 || counter == 4){
+        if (counter == 2 || counter == 3 || counter == 4) {
             System.out.print(surName + " " + name.charAt(0) + ". " + patronymic.charAt(0) + ". " + "на руках " + counter + " книги: ");
-        }else if(counter == 1){
+        } else if (counter == 1) {
             System.out.print(surName + " " + name.charAt(0) + ". " + patronymic.charAt(0) + ". " + "на руках " + counter + " книга: ");
-        }else {
+        } else {
             System.out.print(surName + " " + name.charAt(0) + ". " + patronymic.charAt(0) + ". " + "на руках " + counter + " книг: ");
         }
 
@@ -110,37 +109,6 @@ public class Reader {
 
         }
     }
-
-    public static Reader addReader() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите данные читателя");
-        System.out.println("Введите фамилию: ");
-        String surName = scanner.nextLine();
-        System.out.println("Введите имя: ");
-        String name = scanner.nextLine();
-        System.out.println("Введите отчество: ");
-        String patronymic = scanner.nextLine();
-        System.out.println("Введите номер читательского билета: ");
-        int numberCard = scanner.nextInt();
-        scanner.nextLine();
-        System.out.println("Введите факультет: ");
-        String faculty = scanner.nextLine();
-        int year;
-        int mon;
-        int day;
-        System.out.println("Введите дату рождения:");
-        System.out.print("Год ");
-        year = scanner.nextInt();
-        System.out.print("Месяц ");
-        mon = scanner.nextInt();
-        System.out.print("День ");
-        day = scanner.nextInt();
-        LocalDate birthday = LocalDate.of(year, mon, day);
-        System.out.println("Введите номер телефрна");
-        int numberPhone = scanner.nextInt();
-        return new Reader(name, patronymic, surName, numberCard, faculty, birthday, numberPhone);
-    }
-
 
     public String getName() {
         return name;

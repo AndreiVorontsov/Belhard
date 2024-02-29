@@ -20,6 +20,7 @@ public class IntArray {
 
     public IntArray(int lengthArray) {
         this.lengthArray = lengthArray;
+        array = new int[lengthArray];
     }
 
     public IntArray(int[] array) {
@@ -58,6 +59,7 @@ public class IntArray {
 
     public void setLengthArray(int lengthArray) {
         this.lengthArray = lengthArray;
+        array = new int[lengthArray];
     }
 
     public int[] getArray() {

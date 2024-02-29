@@ -18,13 +18,13 @@ public class Main {
         System.out.print("Введите число c - ");
         int c = scanner.nextInt();
 
-        if (a <= b & a <= c) {
+        if (a <= b && a <= c) {
             System.out.print("b + c = ");
             System.out.println(b + c);
-        } else if (b <= a & b <= c) {
+        } else if (b <= a && b <= c) {
             System.out.print("a + c = ");
             System.out.println(a + c);
-        } else if (c <= b & c <= b) {
+        } else {
             System.out.print("b + a = ");
             System.out.println(b + a);
         }

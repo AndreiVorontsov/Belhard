@@ -39,7 +39,7 @@ public class Main {
             m = scanner.nextInt();
         }
 
-        switch (n){
+        switch (n) {
             case 11:
                 System.out.print("Валет ");
                 break;
@@ -55,7 +55,7 @@ public class Main {
             default:
                 System.out.print(n + " ");
         }
-        switch (m){
+        switch (m) {
             case 1:
                 System.out.println("пик");
                 break;

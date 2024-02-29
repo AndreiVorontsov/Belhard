@@ -13,8 +13,25 @@ public class Main {
     public static void main(String[] args) {
         Random random = new Random();
         int rnd = random.nextInt(1000);
+        String digNum;
+        String checkEven;
 
+        if (rnd / 1000 == 0){
+            digNum = "трехзначное";
+        }else if(rnd / 100 == 0){
+            digNum = "двузначное";
+        } else {
+            digNum = "однозначное";
+        }
 
+        if (rnd % 2 != 0) {
+            checkEven = "нечетное";
+        } else {
+            checkEven = "четное";
+        }
+        System.out.println(rnd + " - " + checkEven + " " + digNum + " число");
+
+/*
         if (rnd > 99) {
             if (rnd % 2 != 0) {
                 System.out.print(rnd);
@@ -39,8 +56,7 @@ public class Main {
                 System.out.print(rnd);
                 System.out.println(" - четное однозначное число ");
             }
-        }
-
+        }*/
     }
 }
 

@@ -29,7 +29,7 @@ public class String_Builder {
         sb.append(String.format("%d * %d = %d \n", a, b, multiplication(a,b)));
         System.out.println(sb.toString());
 
-        while (sb.indexOf("=")>0){
+        while (sb.indexOf("=") >= 0){
             int c = sb.indexOf("=");
             sb.replace(c,c+1,"равно");
         }

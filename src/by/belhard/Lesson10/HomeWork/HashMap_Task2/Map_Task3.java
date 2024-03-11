@@ -13,8 +13,8 @@ package by.belhard.Lesson10.HomeWork.HashMap_Task2;
 public class Map_Task3 {
     public static void main(String[] args) {
         Integer[] arrayInt = {1, 2, 4, 4};
-        Array_K<Integer> skInt = new Array_K<>();
-        skInt.entry(skInt.arrayToMap(arrayInt));
+         Array_K<Integer> skInt = new Array_K<>();
+         skInt.entry(skInt.arrayToMap(arrayInt));
 
         String[] arrayString = {"Masha", "Andrei", "Pasha", "Andrei"};
         Array_K<String> skString = new Array_K<>();

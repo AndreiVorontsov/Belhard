@@ -1,5 +1,6 @@
 package by.belhard.Lesson5.HomeWork.Librery;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
 /*
@@ -24,7 +25,7 @@ import java.time.LocalDate;
 Если же такой книги в читателя нет, вывести сообщение формата
 «Петров В.В. не хранит книгу Игра Эндера»
  */
-public class Reader {
+public class Reader implements Serializable {
     String name;
     String patronymic;
     String surName;

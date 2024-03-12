@@ -22,10 +22,4 @@ class Array_K<K> {
         }
         return mapK;
     }
-
-    public void entry(Map<K, Integer> catalog) {
-        for (Map.Entry<K, Integer> item : catalog.entrySet()) {
-            System.out.println(item);
-        }
-    }
 }

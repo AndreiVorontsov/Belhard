@@ -34,9 +34,9 @@ public class Task_1 {
                 } catch (IOException ex) {
                     System.out.println("Файл не существует");
                 }
-
             }
         }
+
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("/Users/andrejvoroncov/Andrei/Belhard/test/result.txt"))) {
             writer.write(sb.toString());
             System.out.println("Содержимое файлов записано в \"result.txt\"");

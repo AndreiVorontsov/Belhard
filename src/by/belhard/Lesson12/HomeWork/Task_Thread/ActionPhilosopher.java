@@ -8,14 +8,14 @@ public class ActionPhilosopher implements Runnable {
     int key;
     boolean flag = false; // если
     int count = 0;
-    Forks forksNeighborLeft;
-    Forks forksNeighborRight;
-    Forks forks;
-    Integer[] forkNeighborLeft;
-    Integer[] forkNeighborRight;
-    Integer forkMyNeighborLeft;
+    Forks forksNeighborLeft = new Forks();
+    Forks forksNeighborRight = new Forks();
+    Forks forks = new Forks();
+    Integer[] forkNeighborLeft = new Integer[2];
+    Integer[] forkNeighborRight = new Integer[2];
+    Integer forkMyNeighborLeft ;
     Integer forkMyNeighborRight;
-    Integer[] forkMy;
+    Integer[] forkMy = new Integer[2];
     Integer forkMyLeft;
     Integer forkMyRight;
 

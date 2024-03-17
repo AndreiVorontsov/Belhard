@@ -5,8 +5,8 @@ import java.util.Map;
 
 public class Main_Philosophers {
     public static void main(String[] args) {
-//        Integer[] fork = {1,1};
-        Forks forks = new Forks();
+        Integer[] fork = {1,1};
+        Forks forks = new Forks(fork);
         Map<Integer,Forks> philosopher = new HashMap<>();
         philosopher.put(1,forks);
         philosopher.put(2,forks);

@@ -1,9 +1,16 @@
 package by.belhard.Lesson12.HomeWork.Task_Thread;
 
 public class Forks {
-   private Integer[] forks = {1,1};
+   private Integer[] forks;
 
-   public Integer[] getForks() {
+    public Forks() {
+    }
+
+    public Forks(Integer[] forks) {
+        this.forks = forks;
+    }
+
+    public Integer[] getForks() {
         return forks;
     }
 
